@@ -9,10 +9,10 @@ class Genre
   end
 
   def save
-    @@all << self
+    self.class.all << self
   end
 
   def self.all
     @@all
   end
-end 
+end
