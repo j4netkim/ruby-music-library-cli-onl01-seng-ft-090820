@@ -1,5 +1,6 @@
 class Artist
   attr_accessor :name
+  attr_reader :songs
 
   @@all = []
 
@@ -24,7 +25,9 @@ class Artist
     new_artist = new(name)
     new_artist.save
     new_artist
-  end 
+  end
+
+
 
 
 end
