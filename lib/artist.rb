@@ -18,6 +18,12 @@ class Artist
 
   def self.destroy_all
     self.all.clear
+  end
+
+  def self.create(name)
+    new_artist = new(name)
+    new_artist.save
+    new_artist
   end 
 
 
